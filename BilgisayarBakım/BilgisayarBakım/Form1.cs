@@ -488,7 +488,6 @@ namespace Bilgisayar_Bakım
                             continue;
                         }
 
-                        // check if the uninstall string contains the keyword "uninstall"
                         if (!uninstallString.ToLower().Contains("uninstall"))
                         {
                             continue;
@@ -498,7 +497,6 @@ namespace Bilgisayar_Bakım
                         {
                             continue;
                         }
-                        // delete the software key
                         Registry.LocalMachine.DeleteSubKeyTree(softwareKey + "\\" + displayName);
                     }
                 }
